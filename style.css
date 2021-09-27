@@ -12,10 +12,11 @@ body {
 .blue-robot {
   animation-name: slide;
   animation-duration: 2s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 2;
   animation-timing-function: ease-in;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes slide {

@@ -1,0 +1,26 @@
+body {
+  /* background-color: cornsilk; */
+  background-image: url(pexels-kush-kaushik-2078126.jpg);
+  background-size: cover;
+  background-position: 0px -250px;
+}
+.wrapper {
+  margin: 20em auto 2em auto;
+  position: relative;
+  width: 80%;
+}
+.blue-robot {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(900px);
+  }
+}

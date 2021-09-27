@@ -11,19 +11,39 @@ body {
 }
 .blue-robot {
   animation-name: slide;
-  animation-duration: 2s;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in;
+  animation-duration: 3s; /*the time to wait before the animation starts*/
+  animation-iteration-count: 4; /*how many times to display the animation*/
+  animation-timing-function: cubic-bezier(0.41, 0.07, 0.62, 0.91);
+  /*animation-timing-function: ease-in-out; or ease or linear or ease-in*/
   animation-delay: 2s;
   animation-fill-mode: forwards;
-  animation-direction: alternate-reverse;
+  animation-direction: alternate;
 }
-
+/*option one of writing keyframes from -to*/
+/* 
 @keyframes slide {
   from {
     transform: translateX(0);
   }
   to {
+    transform: translateX(900px);
+  }
+} */
+/*option two of writing keyframes with percentage and its more poweful than option one*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(200px);
+  }
+  35% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(980px);
+  }
+  100% {
     transform: translateX(900px);
   }
 }
